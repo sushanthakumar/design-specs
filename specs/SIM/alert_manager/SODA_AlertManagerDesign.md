@@ -18,7 +18,7 @@ This design does not cover the deployment model or the way in which this module 
 |-----------------|---------------------------|
 | AlertMngr.IR.001        | Send alarms received from registered devices to third party managers |
 | AlertMngr.IR.002     | Clear alarm specified by manager |
-| AlertMngr.IR.003     | Configure snmp v2c/v3 users and device trap configuration |
+| AlertMngr.IR.003     | Manage alert source configuration |
 
 ### Feature Requirements
 #### Functional Requirements
@@ -120,6 +120,8 @@ NA
 ## Architecture Analysis
 ### High Level Module View
 ### High Level Module Architecture
+![](Alert_Manager_Submodules.png)
+
 #### Submodules
 * Trap Receiver : Listens and handles incoming traps
 * Alert Processor: Parses using MIB info, converts to soda model, sends to exporter
@@ -127,6 +129,8 @@ NA
 
 ## Detailed Design
 ### Intermodule interaction diagram
+![](Inter_Module_Interaction.png)
+
 ### Interface Design
 #### Interfaces consumed by Alert Manager
 |  Provider | Interfaces |
@@ -160,7 +164,9 @@ NA
 |              | Input: clear alert related data |
 |              | Output: Success/Failure |
 
-#### Interface model
+### Alert API model
+![](Alert_APIs.png)
+
 Swagger Reference (https://github.com/sodafoundation/delfin/blob/master/openapi-spec/swagger.yaml)
 
 ### Data Model
@@ -169,6 +175,12 @@ Swagger Reference (https://github.com/sodafoundation/delfin/blob/master/openapi-
 
 ### Sequence Diagrams
 * Configuring alert source
+![](Config_Alert_Source.png)
+
 * Processing incoming traps
+![](Trap_Processing.png)
+
 * Clearing alert
+![](Clear_Alert.png)
+
 
