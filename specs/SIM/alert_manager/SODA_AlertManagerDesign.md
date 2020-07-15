@@ -176,7 +176,8 @@ Swagger Reference (https://github.com/sodafoundation/delfin/blob/master/openapi-
 * AlertModel: Soda alert model which will be pushed to export manager after complete processing of trap 
 
 ### Sequence Diagrams
-* Configuring alert source
+
+* Configuring alert source1
 ![](Config_Alert_Source.png)
 
 * Processing incoming traps
