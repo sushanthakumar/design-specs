@@ -165,25 +165,29 @@ NA
 |              | Output: Success/Failure |
 
 ### Alert API model
+
 ![](Alert_APIs.png)
 
 Swagger Reference (https://github.com/sodafoundation/delfin/blob/master/openapi-spec/swagger.yaml)
 
 ### Data Model
 * AlertSourceInfo: All the information about the alert source device which will be stored in DB
+
 ![](Alert_Source_Data_Model.png)
 
 * AlertModel: Soda alert model which will be pushed to export manager after complete processing of trap 
 
 ### Sequence Diagrams
+* Configuring alert source
 
-* Configuring alert source1
 ![](Config_Alert_Source.png)
 
 * Processing incoming traps
+
 ![](Trap_Processing.png)
 
 * Clearing alert
+
 ![](Clear_Alert.png)
 
 
