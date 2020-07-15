@@ -171,7 +171,9 @@ Swagger Reference (https://github.com/sodafoundation/delfin/blob/master/openapi-
 
 ### Data Model
 * AlertSourceInfo: All the information about the alert source device which will be stored in DB
-* AlertModel: Soda alert model which will be pushed to export manager after complete processing of trap
+![](Alert_Source_Data_Model.png)
+
+* AlertModel: Soda alert model which will be pushed to export manager after complete processing of trap 
 
 ### Sequence Diagrams
 * Configuring alert source
